@@ -789,39 +789,98 @@
               </div>
             </div>
           </div>
+            <div class="col-lg-8 mt-5 mt-lg-0">
+              <form
+                action="forms/contact.php"
+                method="post"
+                role="form"
+                class="php-email-form"
+              >
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Nombre completo"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Tu Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <select
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    required
+                  >
+                    <option value="">Servicio</option>
+                    <option value="Hola">Valuacion de Activos</option>
+                    <option value="Hola">Asesoramiento en compra de campos</option>
+                    <option value="Hola">Consultoría y Auditorías</option>
+                    <option value="Hola">Administracion</option>
+                    <option value="Hola">Empresas Familiares</option>
+                    <option value="Hola">Sustentabilidad y Medio Ambiente</option>
+                  </select>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="5"
+                    id="message"
+                    placeholder="Mensaje"
+                    required
+                  ></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your message has been sent. Thank you!
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit" id="btn">Mandar Mensaje</button>
+                </div>
+              </form>
+            </div>
+              <script src="https://smtpjs.com/v3/smtp.js">
+              </script>
+              <script>
+                var btn = document.getElementById("btn");
+                btn.addEventListener("click", function(e){
+                  e.preventDefault()
+                  var name = document.getElementById('name').value;
+                  var email = document.getElementById('email').value;
+                  var subject = document.getElementById('subject').value;
+                  var message = document.getElementById('message').value;
+                  var body = 'name: ' +name + '<br/> email: ' + email + '<br/> subject: ' + subject + '<br/> message: ' + message; 
 
-          <div class="col-lg-8 mt-5 mt-lg-0">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre completo"
-                    required />
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Tu Email" required />
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <select type="text" class="form-control" name="subject" id="subject" required>
-                  <option value="" disabled>Servicio</option>
-                  <option value="Hola">1</option>
-                  <option value="Hola">2</option>
-                </select>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">
-                  Your message has been sent. Thank you!
-                </div>
-              </div>
-              <div class="text-center">
-                <button type="submit">Mandar Mensaje</button>
-              </div>
-            </form>
+                Email.send({
+                  SecureToken : "b0554063-1834-473c-b624-f86a574f0790",
+                  To : 'multifranco0@gmail.com',
+                  From : "drilucasmartin@gmail.com",
+                  Subject : "Contacting",
+                  Body : body 
+                }).then(
+                message => alert(message)
+                );
+
+                })
+              </script>
           </div>
         </div>
       </div>
