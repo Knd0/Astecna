@@ -206,7 +206,7 @@
 
 
   new Swiper('.clients-slider2', {
-    direction: 'horizontal', // Asegurarse de que la dirección sea horizontal
+    direction: 'horizontal',
     speed: 400,
     loop: true,
     autoplay: {
