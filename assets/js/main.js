@@ -168,7 +168,45 @@
   /**
    * Clients Slider
    */
-  new Swiper('.clients-slider', {
+  new Swiper('.clients-slider1', {
+    speed: 400,
+    loop: true,
+    rtl: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 40
+      },
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 60
+      },
+      640: {
+        slidesPerView: 4,
+        spaceBetween: 80
+      },
+      992: {
+        slidesPerView: 6,
+        spaceBetween: 120
+      }
+    }
+  });
+  
+  
+
+
+  new Swiper('.clients-slider2', {
+    direction: 'horizontal', // Asegurarse de que la dirección sea horizontal
     speed: 400,
     loop: true,
     autoplay: {
@@ -200,6 +238,7 @@
       }
     }
   });
+  
 
   /**
    * Porfolio isotope and filter
