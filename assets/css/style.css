@@ -608,6 +608,7 @@ section {
 .clients .swiper-slide img:hover {
   filter: none;
   opacity: 1;
+  padding-right: 0;
 }
 
 .clients .swiper-pagination {
@@ -628,8 +629,48 @@ section {
 }
 
 .icbc {
+  width: 90px;
+  height: 60px;
+}
+
+.hipotecario{
+  width: 150px;
+  height: 60px;
+}
+
+.bbva {
   width: 100px;
-  height: 85px;
+  height: 30px;
+}
+
+.patagonia{
+  width: 100px;
+  height: 35px;
+}
+
+.peñaflor {
+  width: 100px;
+  height: 60px;
+}
+
+.rabobank {
+  width: 110px;
+  height: 40px;
+}
+
+.melicura {
+  width: 150px;
+  height: 50px;
+}
+
+.galicia {
+  width: 120px;
+  height: 40px;
+}
+
+.HSBC {
+  width: 100px;
+  height: 60px;
 }
 
 /*--------------------------------------------------------------
