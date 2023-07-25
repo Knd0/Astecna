@@ -541,17 +541,8 @@ section {
   margin: 0 0 5px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #515151;
+  color: #02bd0b;
   font-family: "Poppins", sans-serif;
-}
-
-.section-title h3::after {
-  content: "";
-  width: 120px;
-  height: 1px;
-  display: inline-block;
-  background: #02bd0b;
-  margin: 4px 10px;
 }
 
 .section-title p {
@@ -561,7 +552,16 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #151515;
+  color: #00408b;
+}
+
+.section-title p::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #02bd0b;
+  margin: 10px 10px;
 }
 
 /*--------------------------------------------------------------
@@ -569,6 +569,10 @@ section {
 --------------------------------------------------------------*/
 .about {
   background: #ededed;
+}
+
+.about-text {
+  text-align: justify;
 }
 
 .about .content h3 {
@@ -728,6 +732,10 @@ section {
 --------------------------------------------------------------*/
 .services {
   background: #ededed;
+}
+
+.services-text {
+  text-align: justify;
 }
 
 .services .icon-box {
