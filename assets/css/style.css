@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", Light 300;
-  color: #121212
+  color: #121212;
 }
 
 a {
@@ -44,12 +44,12 @@ h6 {
 
 .back-to-top i {
   font-size: 28px;
-  color: #151515;
+  color: #ededed;
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #151515;
+  background: #ededed;
 }
 
 .back-to-top:hover i {
@@ -1021,7 +1021,7 @@ section {
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
-.counts{
+.counts {
   background: #ededed;
 }
 
@@ -1330,7 +1330,7 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #151515;
+  color: #ededed;
 }
 
 .contact .info p {
@@ -1420,7 +1420,7 @@ section {
   background: #00408b;
   border: 0;
   padding: 10px 24px;
-  color: #151515;
+  color: #ededed;
   transition: 0.4s;
   border-radius: 4px;
 }
