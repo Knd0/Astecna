@@ -57,6 +57,7 @@
         emailjs.init("dBj4hlGAaf1BeoX53");
       })();
     </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
 
   <body>
@@ -844,7 +845,7 @@
                     id="subject"
                     required
                   >
-                    <option value="" disabled>Servicio</option>
+                    <option value="" disabled selected>Servicio</option>
                     <option>Valuacion de Activos</option>
                     <option>Asesoramiento en compra de campos</option>
                     <option>Consultoría y Auditorías</option>
@@ -863,17 +864,10 @@
                     required
                   ></textarea>
                 </div>
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">
-                    Your message has been sent. Thank you!
-                  </div>
-                </div>
+                <div class="g-recaptcha" data-sitekey="6Lf7zlgnAAAAAKO0M2MbA7Yp5iIPWW_8gQl4zbnO"></div>
                 <div class="text-center">
                   <button onclick="SendMail()" type="submit">Mandar Mensaje</button>
-                </div>
-              
+                </div>  
             </div>
           </div>
         </div>
@@ -919,5 +913,6 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.all.min.js"></script>
   </body>
 </html>
