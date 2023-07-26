@@ -1314,6 +1314,16 @@ section {
   background: #ededed;
 }
 
+.contact-bottom {
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+}
+
+.g-recaptcha {
+  position: relative;
+}
+
 .contact .info {
   width: 100%;
   background: #ededed;

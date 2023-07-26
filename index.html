@@ -1,918 +1,752 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Astecna</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <!-- Favicons -->
-    <link href="assets/img/logos/logo.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+  <title>Astecna</title>
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
-    />
+  <!-- Favicons -->
+  <link href="assets/img/logos/logo.png" rel="icon" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
 
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <!-- Translate Plugin -->
-    <script src="//cdn.conveythis.com/javascript/conveythis-initializer.js"></script>
-    <script type="text/javascript">
-      document.addEventListener("DOMContentLoaded", function (e) {
-        ConveyThis_Initializer.init({
-          api_key: "pub_5b780daa28c513535f6d5bd839f009e6",
-        });
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <!-- Translate Plugin -->
+  <script src="//cdn.conveythis.com/javascript/conveythis-initializer.js"></script>
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function (e) {
+      ConveyThis_Initializer.init({
+        api_key: "pub_5b780daa28c513535f6d5bd839f009e6",
       });
-    </script>
-    <!-- Emailjs -->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("dBj4hlGAaf1BeoX53");
-      })();
-    </script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  </head>
+    });
+  </script>
+  <!-- Emailjs -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("dBj4hlGAaf1BeoX53");
+    })();
+  </script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
 
-  <body>
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top">
-      <div
-        class="container d-flex align-items-center justify-content-lg-between"
-      >
-        <!-- <h1 class="logo me-auto me-lg-0">
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+      <!-- <h1 class="logo me-auto me-lg-0">
           <a href="index.html">Astecna<span>.</span></a>
         </h1> -->
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="index.html" class="me-auto me-lg-0"
-          ><img
-            src="assets/img/logos/Logo-blanco.png"
-            alt=""
-            class="img-fluid"
-            style="width: 100px; height: 100px"
-        /></a>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="me-auto me-lg-0"><img src="assets/img/logos/Logo-blanco.png" alt="" class="img-fluid"
+          style="width: 100px; height: 100px" /></a>
 
-        <nav id="navbar" class="navbar order-last order-lg-0">
-          <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-            <li><a class="nav-link scrollto" href="#about">Nosotros</a></li>
-            <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
-            <li><a class="nav-link scrollto" href="#team">Equipo</a></li>
-            <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
-          </ul>
-          <div id="translate" class="button-trans"></div>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-        <!-- .navbar -->
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Nosotros</a></li>
+          <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
+          <li><a class="nav-link scrollto" href="#team">Equipo</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+        </ul>
+        <div id="translate" class="button-trans"></div>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
 
-        <a></a>
+      <a></a>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-10 col-lg-10">
+          <h1>
+            <span>Astecna</span> es un Proveedor de productos para agricultura
+            y ganadería<span>.</span>
+          </h1>
+          <h2>Asesoría tecnológica agropecuaria</h2>
+        </div>
       </div>
-    </header>
-    <!-- End Header -->
+    </div>
+  </section>
+  <!-- End Hero -->
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center justify-content-center">
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
       <div class="container" data-aos="fade-up">
-        <div
-          class="row justify-content-center"
-          data-aos="fade-up"
-          data-aos-delay="150"
-        >
-          <div class="col-xl-10 col-lg-10">
-            <h1>
-              <span>Astecna</span> es un Proveedor de productos para agricultura
-              y ganadería<span>.</span>
-            </h1>
-            <h2>Asesoría tecnológica agropecuaria</h2>
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <div class="section-title">
+              <p>Sobre Nosotros</p>
+            </div>
+
+            <p class="fst-italic about-text">
+              Somos una prestadora de servicios agropecuarios con una
+              trayectoria de 24 años en el mercado. Con más de 6.000 casos
+              analizados en Argentina, Uruguay y Bolivia, somos referentes en
+              tasaciones de campos y estamos comprometidos con brindar
+              soluciones de calidad. Nuestros servicios incluyen particiones y
+              escisiones, asesoramiento en inversiones y administración, lo
+              que nos permite atender las necesidades tanto de clientes
+              corporativos como de familias y particulares.
+            </p>
+
+            <p class="fst-italic about-text">
+              Con un equipo de expertos altamente capacitados, nos enfocamos
+              en proporcionar asesoría integral y personalizada para maximizar
+              el valor y el rendimiento de las inversiones agropecuarias de
+              nuestros clientes. Nuestra experiencia y profesionalismo nos han
+              permitido destacarnos en el mercado a lo largo de los años.
+              Trabajamos con pasión y compromiso para satisfacer las
+              necesidades únicas de cada cliente y seguir siendo líderes en el
+              sector agropecuario.
+            </p>
           </div>
         </div>
       </div>
     </section>
-    <!-- End Hero -->
+    <!-- End About Section -->
 
-    <main id="main">
-      <!-- ======= About Section ======= -->
-      <section id="about" class="about">
-        <div class="container" data-aos="fade-up">
-          <div class="row">
-            <div
-              class="col-lg-6 order-1 order-lg-2"
-              data-aos="fade-left"
-              data-aos-delay="100"
-            >
-              <img src="assets/img/about.jpg" class="img-fluid" alt="" />
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-in">
+        <div class="section-title">
+          <p>Clientes</p>
+        </div>
+        <div class="clients-slider1 swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide">
+              <img src="assets/img/clients/BBVA.png" class="img-fluid" alt="" />
             </div>
-            <div
-              class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
-              data-aos="fade-right"
-              data-aos-delay="100"
-            >
-              <div class="section-title">
-                <p>Sobre Nosotros</p>
-              </div>
-
-              <p class="fst-italic about-text">
-                Somos una prestadora de servicios agropecuarios con una
-                trayectoria de 24 años en el mercado. Con más de 6.000 casos
-                analizados en Argentina, Uruguay y Bolivia, somos referentes en
-                tasaciones de campos y estamos comprometidos con brindar
-                soluciones de calidad. Nuestros servicios incluyen particiones y
-                escisiones, asesoramiento en inversiones y administración, lo
-                que nos permite atender las necesidades tanto de clientes
-                corporativos como de familias y particulares.
-              </p>
-
-              <p class="fst-italic about-text">
-                Con un equipo de expertos altamente capacitados, nos enfocamos
-                en proporcionar asesoría integral y personalizada para maximizar
-                el valor y el rendimiento de las inversiones agropecuarias de
-                nuestros clientes. Nuestra experiencia y profesionalismo nos han
-                permitido destacarnos en el mercado a lo largo de los años.
-                Trabajamos con pasión y compromiso para satisfacer las
-                necesidades únicas de cada cliente y seguir siendo líderes en el
-                sector agropecuario.
-              </p>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/bind.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/citibank.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/expoagro.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/galicia.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/Hipotecario.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/HSBC.png" class="img-fluid" alt="" />
             </div>
           </div>
         </div>
-      </section>
-      <!-- End About Section -->
-
-      <!-- ======= Clients Section ======= -->
-      <section id="clients" class="clients">
-        <div class="container" data-aos="zoom-in">
-          <div class="section-title">
-            <p>Clientes</p>
-          </div>
-          <div class="clients-slider1 swiper">
-            <div class="swiper-wrapper align-items-center">
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/clients/BBVA.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/clients/bind.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/clients/citibank.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/clients/expoagro.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/clients/galicia.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/clients/Hipotecario.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/clients/HSBC.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
+        <br />
+        <div class="clients-slider2 swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide">
+              <img src="assets/img/clients/SUPERVIELLE.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/rabobank.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/praxis.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/peñaflor.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/patagonia.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/melicura.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/clients/icbc.png" class="icbc img-fluid" alt="" />
             </div>
           </div>
-          <br />
-          <div class="clients-slider2 swiper">
-            <div class="swiper-wrapper align-items-center">
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/clients/SUPERVIELLE.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/clients/rabobank.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/clients/praxis.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/clients/peñaflor.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/clients/patagonia.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/clients/melicura.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="assets/img/clients/icbc.png"
-                  class="icbc img-fluid"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Clients Section -->
-
-      <!-- ======= Services Section ======= -->
-      <section id="services" class="services">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <p>Servicios</p>
-          </div>
-
-          <div class="row">
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              <div class="icon-box">
-                <div class="icon"><i class="bx bx-line-chart"></i></div>
-                <h4><a>Valuación de Activos</a></h4>
-                <p class="services-text">
-                  <strong>•</strong> Brindamos servicios a particulares,
-                  empresas y bancos en tasaciones de activos para garantías
-                  crediticias. Verificamos la capacidad de repago de créditos,
-                  haciendo seguimiento de la explotación agropecuaria.
-                </p>
-                <p class="services-text">
-                  <strong>•</strong> Valuación y desarrollo de proyectos de
-                  inversión.
-                </p>
-                <p class="services-text">
-                  <strong>•</strong> Mapeo y estudio de ambientes y tasaciones
-                  de campos, ya sean exclusivamente satelitales o bien con
-                  visita a los predios.
-                </p>
-                <p class="services-text">
-                  <strong><strong>•</strong> </strong> Peritajes agronómicos y
-                  de medioambiente en causas judiciales y en arreglos de parte.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
-              data-aos="zoom-in"
-              data-aos-delay="200"
-            >
-              <div class="icon-box">
-                <div class="icon"><i class="bx bx-money"></i></div>
-                <h4><a>Asesoramiento en compra de campos</a></h4>
-                <p class="services-text">
-                  <strong><strong>•</strong> </strong> Ante la decisión de un
-                  inversor de comprar tierras, se definen los parámteros de su
-                  preferencia, en base a lo cual se analizan campos que se
-                  adecuen a los criterios de búsqueda.
-                </p>
-                <p class="services-text">
-                  <strong><strong>•</strong> </strong> Nuestra metodología de
-                  trabajo nos permite analizar gran cantidad de campos de la
-                  manera más discreta, sin generar expectativas en el mercado.
-                </p>
-                <p class="services-text">
-                  <strong><strong>•</strong> </strong> Recién se visitará un
-                  predio cuando estemos convencidos que los valores pretendidos
-                  son acorde a la productividad objetiva del campo, como así
-                  también sus riesgos, tales como inundaciones, lo que permite
-                  optimizar recursos.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
-              data-aos="zoom-in"
-              data-aos-delay="300"
-            >
-              <div class="icon-box">
-                <div class="icon"><i class="bi bi-card-text"></i></div>
-                <h4><a>Consultoría y Auditorías</a></h4>
-                <p class="services-text">
-                  <strong><strong>•</strong> </strong> Hacemos diagnósticos y
-                  reingeniería de sociedades y empresas agropecuarias.
-                </p>
-                <p class="services-text">
-                  <strong><strong>•</strong> </strong> Particiones y
-                  subdivisiones de empresas agropecuarias, participamos en las
-                  negociaciones entre partes.
-                </p>
-                <p class="services-text">
-                  <strong><strong>•</strong> </strong> Análisis y desarrollo de
-                  proyectos de inversión del sector agropecuario, evaluando
-                  aspectos técnicos, económicos y estratégicos.
-                </p>
-                <p class="services-text">
-                  <strong><strong>•</strong> </strong> Actuamos de forma
-                  independiente y con confidencialidad al momento de búsqueda y
-                  realización.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              <div class="icon-box">
-                <div class="icon"><i class="bi bi-briefcase"></i></div>
-                <h4><a>Administración</a></h4>
-                <p class="services-text">
-                  <strong><strong>•</strong> </strong> Nos dedicamos al
-                  planeamiento, organización y gestión de operaciones,
-                  asesorando en la gestión técnica- agronómica y
-                  administrativo-contable.
-                </p>
-                <p class="services-text">
-                  <strong><strong>•</strong> </strong> En base a nuestra
-                  experiencia en campos propios y de terceros podemos garantizar
-                  un buen asesoramiento seguido de la coordinación y seguimiento
-                  de los servicios de producción.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
-              data-aos="zoom-in"
-              data-aos-delay="200"
-            >
-              <div class="icon-box">
-                <div class="icon"><i class="bx bx-home-alt-2"></i></div>
-                <h4><a>Empresas Familiares</a></h4>
-                <p class="services-text">
-                  <strong><strong>•</strong> </strong> Desde Astecna colaboramos
-                  en la reestructuración de empresas familiares buscando
-                  protejer el patrimonio económico y cultural de la familia.
-                </p>
-                <p class="services-text">
-                  <strong><strong>•</strong> </strong> Nuestro objetivo es
-                  generar empresas transferibles a los descendientes a través de
-                  la búsqueda de armonía entre sus miembros, por medio de pautas
-                  claras y equitativas, con el entrenamiento, haciendo énfasis
-                  en la comunicación y la prevención de conflictos.
-                </p>
-                <p class="services-text">
-                  <strong><strong>•</strong> </strong> Logrando de este modo,
-                  empresas que sean un disfrute y sustento para sus miembros,
-                  buscando el resguardo del patrimonio familiar.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
-              data-aos="zoom-in"
-              data-aos-delay="300"
-            >
-              <div class="icon-box">
-                <div class="icon"><i class="bx bx-leaf"></i></div>
-                <h4><a>Sustentabilidad y Medio Ambiente</a></h4>
-                <div class="services-text">
-                  <p>
-                    <strong>• </strong>Realizamos peritajes sobre impacto
-                    ambiental, por ejemplo, en campos con explotación
-                    hidrocarburifera; también evaluamos sustentabilidad de
-                    sistemas productivos en zonas marginales.
-                  </p>
-                  <p>
-                    <strong>• </strong>Donde podemos evaluar el impacto en
-                    campos por obras civiles, canalizaciones, trazado de
-                    caminos, y alteraciones en el ambiente hechas por el hombre,
-                    pudiéndose demostrar por imágenes satelitales el efecto que
-                    causa en una explotación agropecuaria.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Services Section -->
-
-      <!-- ======= Cta Section ======= -->
-      <section id="cta" class="cta">
-        <div class="container" data-aos="zoom-in">
-          <div class="text-center">
-            <h3>Solicitar Servicio</h3>
-            <p>
-              Descubre cómo nuestros servicios pueden ayudarte. ¡Solicita ahora
-              y obtén soluciones profesionales para tus necesidades!
-            </p>
-
-            <a class="cta-btn" href="#contact">Contactar</a>
-          </div>
-        </div>
-      </section>
-      <!-- End Cta Section -->
-
-      <!-- ======= Team Section ======= -->
-      <section id="team" class="team">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <p>Nuestro Equipo</p>
-          </div>
-          <div class="section-title">
-            <h3>Socios</h3>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-lg-3 col-md-6 align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="100">
-                <div class="member-img">
-                  <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  
-                  <h4>Ricardo Latour</h4>
-                  <span>
-                    Socio fundador de Astecna, en el año 1999.
-                    <div><br /></div>
-                    Cuenta con 39 años de experiencia de trabajo en el sector,
-                    con gran conocimiento del pais y de distintos sistemas de
-                    producción.
-                  </span>
-                  <div><br /></div>
-                  <span>
-                    Es Ingeniero en Producción Agropecuaria de la Universidad
-                    Católica Argentina (UCA), donde fue profesor durante 25
-                    años.</span
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="200">
-                <div class="member-img">
-                  <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Agustín Braun</h4>
-                  <span>
-                    Socio fundador de Astecna, en el año 1999.
-                    <div><br /></div>
-                    Cuenta con 38 años de experiencia en el sector Es Licenciado
-                    en Economía Agraria de la Universidad de Belgrano.
-                    <div><br /></div>
-                    Es administrador y director de empresas agropecuarias, con
-                    experiencia en gestión financiera.
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="300">
-                <div class="member-img">
-                  <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Matías Villalba</h4>
-                  <span>
-                    Asociado a Astecna desde el año 2012.
-                    <div><br /></div>
-                    Es especialista en Sistemas de Información Geográfica (GIS),
-                    con mas de 4.000 casos confeccionados principalmente en
-                    Argentina, y también en Bolivia y Uruguay.
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div><br /></div>
-            <div class="section-title">
-              <h3>Asociados</h3>
-            </div>
-            <div class="col-lg-3 col-md-6 align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="300">
-                <div class="member-img"></div>
-                <div class="member-info">
-                  <h4>Ing. Agr. Mario Lanari</h4>
-                  <span>Especialista en NOA y cultivos intensivos.</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="300">
-                <div class="member-img"></div>
-                <div class="member-info">
-                  <h4>Lic. Juan Ortiz Basualdo</h4>
-                  <span>Administrador de empresas agropecuarias.</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="300">
-                <div class="member-img"></div>
-                <div class="member-info">
-                  <h4>Ing. Agr. Rubén Oliverio</h4>
-                  <span>Especialista en zona Núcleo.</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="300">
-                <div class="member-img"></div>
-                <div class="member-info">
-                  <h4>Lic. en Edafología Rubén Walter</h4>
-                  <span>Especialista en suelos.</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="300">
-                <div class="member-img"></div>
-                <div class="member-info">
-                  <h4>Lic. En Administración Victoria Latour</h4>
-                  <span
-                    >Responsable de gestión y planificación financiera de
-                    nuestras administraciones.</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="300">
-                <div class="member-img"></div>
-                <div class="member-info">
-                  <h4>Ing. Agr. Guillermo Aponte Tinao</h4>
-                  <span
-                    >Radicado en Santa Cruz de la Sierra, Bolivia. Inversiones y
-                    administraciones de campo.</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="300">
-                <div class="member-img"></div>
-                <div class="member-info">
-                  <h4>Ing. Carlos Rizo</h4>
-                  <span
-                    >Especialista en viñedos, cultivos intensivos e
-                    instalaciones industriales.
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 align-items-stretch">
-              <div class="member" data-aos="fade-up" data-aos-delay="300">
-                <div class="member-img"></div>
-                <div class="member-info">
-                  <h4>Abogado Guillermo Latour</h4>
-                  <span> Derecho comercial y societario.</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Team Section -->
-
-      <!-- ======= Testimonials Section ======= -->
-      <section id="testimonials" class="testimonials">
-        <div class="container" data-aos="zoom-in">
-          <div
-            class="testimonials-slider swiper"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img
-                    src="assets/img/testimonials/testimonials-1.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec
-                    porttitora entum suscipit rhoncus. Accusantium quam,
-                    ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                    risus at semper.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img
-                    src="assets/img/testimonials/testimonials-2.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse
-                    labore quem cillum quid cillum eram malis quorum velit fore
-                    eram velit sunt aliqua noster fugiat irure amet legam anim
-                    culpa.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img
-                    src="assets/img/testimonials/testimonials-3.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim
-                    sint quorum nulla quem veniam duis minim tempor labore quem
-                    eram duis noster aute amet eram fore quis sint minim.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img
-                    src="assets/img/testimonials/testimonials-4.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa
-                    multos export minim fugiat minim velit minim dolor enim duis
-                    veniam ipsum anim magna sunt elit fore quem dolore labore
-                    illum veniam.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img
-                    src="assets/img/testimonials/testimonials-5.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure
-                    aliqua veniam tempor noster veniam enim culpa labore duis
-                    sunt culpa nulla illum cillum fugiat legam esse veniam culpa
-                    fore nisi cillum quid.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
-      <!-- End Testimonials Section -->
-
-      <!-- ======= Contact Section ======= -->
-      <section id="contact" class="contact">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <p>Contacto</p>
-          </div>
-
-          <div>
-            <iframe
-              style="border: 0; width: 100%; height: 270px"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.689756548422!2d-58.39832988514823!3d-34.58671588046383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca98cac2756f%3A0x149b736a7e57f10c!2sAv.+Pueyrred%C3%B3n+2318%2C+C1119ACT+CABA!5e0!3m2!1ses!2sar!4v1495045419666"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-          </div>
-
-          <div class="row mt-5">
-            <div class="col-lg-4">
-              <div class="info">
-                <div class="address">
-                  <i class="bi bi-geo-alt"></i>
-                  <h4>Ubicación:</h4>
-                  <p>Avenida Pueyrredón 2318. Piso 5º «K»</p>
-                </div>
-
-                <div class="email">
-                  <i class="bi bi-envelope"></i>
-                  <h4>Email:</h4>
-                  <p>info@astecna.com</p>
-                </div>
-
-                <div class="phone">
-                  <i class="bi bi-phone"></i>
-                  <h4>Teléfono</h4>
-                  <p><strong>Ricardo Latour:</strong> (011) 5014-4612</p>
-                  <p><strong>Matías Villalba:</strong> (011) 5890-2456</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-8 mt-5 mt-lg-0">
-              <form action="sumbit" role="form" class="php-email-form">
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <input
-                      type="text"
-                      name="name"
-                      class="form-control"
-                      id="fullName"
-                      placeholder="Nombre completo"
-                      required
-                    />
-                  </div>
-                  <div class="col-md-6 form-group mt-3 mt-md-0">
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="email_id"
-                      id="email_id"
-                      placeholder="Tu Email"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="form-group mt-3">
-                  <select
-                    type="text"
-                    class="form-control"
-                    id="subject"
-                    required
-                  >
-                    <option value="" disabled selected>Servicio</option>
-                    <option>Valuacion de activos</option>
-                    <option>Asesoramiento en compra de campos</option>
-                    <option>Consultoría y Auditorías</option>
-                    <option>Administracion</option>
-                    <option>Empresas Familiares</option>
-                    <option>Sustentabilidad y Medio Ambiente</option>
-                  </select>
-                </div>
-                <div class="form-group mt-3">
-                  <textarea
-                    id="message"
-                    class="form-control"
-                    name="message"
-                    rows="5"
-                    placeholder="Mensaje"
-                    required
-                  ></textarea>
-                </div>
-                <div class="g-recaptcha" data-sitekey="6LeE51gnAAAAAD7PgXS7JeQei3SeRfinluQAcLgM"></div>
-                <div class="text-center">
-                  <button onclick="SendMail()" type="submit">Mandar Mensaje</button>
-                </div>  
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Contact Section -->
-    </main>
-    <!-- End #main -->
-
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-      <div class="container">
-        <div class="copyright">
-          &copy; 2023 <strong><span>Astecna</span></strong
-          >. All Rights Reserved
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
-          Designed by
-          <a href="https://bootstrapmade.com/">Astecna Design Team</a>
         </div>
       </div>
-    </footer>
-    <!-- End Footer -->
+    </section>
+    <!-- End Clients Section -->
 
-    <div id="preloader"></div>
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <p>Servicios</p>
+        </div>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-line-chart"></i></div>
+              <h4><a>Valuación de Activos</a></h4>
+              <p class="services-text">
+                <strong>•</strong> Brindamos servicios a particulares,
+                empresas y bancos en tasaciones de activos para garantías
+                crediticias. Verificamos la capacidad de repago de créditos,
+                haciendo seguimiento de la explotación agropecuaria.
+              </p>
+              <p class="services-text">
+                <strong>•</strong> Valuación y desarrollo de proyectos de
+                inversión.
+              </p>
+              <p class="services-text">
+                <strong>•</strong> Mapeo y estudio de ambientes y tasaciones
+                de campos, ya sean exclusivamente satelitales o bien con
+                visita a los predios.
+              </p>
+              <p class="services-text">
+                <strong><strong>•</strong> </strong> Peritajes agronómicos y
+                de medioambiente en causas judiciales y en arreglos de parte.
+              </p>
+            </div>
+          </div>
 
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.all.min.js"></script>
-  </body>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
+            data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-money"></i></div>
+              <h4><a>Asesoramiento en compra de campos</a></h4>
+              <p class="services-text">
+                <strong><strong>•</strong> </strong> Ante la decisión de un
+                inversor de comprar tierras, se definen los parámteros de su
+                preferencia, en base a lo cual se analizan campos que se
+                adecuen a los criterios de búsqueda.
+              </p>
+              <p class="services-text">
+                <strong><strong>•</strong> </strong> Nuestra metodología de
+                trabajo nos permite analizar gran cantidad de campos de la
+                manera más discreta, sin generar expectativas en el mercado.
+              </p>
+              <p class="services-text">
+                <strong><strong>•</strong> </strong> Recién se visitará un
+                predio cuando estemos convencidos que los valores pretendidos
+                son acorde a la productividad objetiva del campo, como así
+                también sus riesgos, tales como inundaciones, lo que permite
+                optimizar recursos.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
+            data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-card-text"></i></div>
+              <h4><a>Consultoría y Auditorías</a></h4>
+              <p class="services-text">
+                <strong><strong>•</strong> </strong> Hacemos diagnósticos y
+                reingeniería de sociedades y empresas agropecuarias.
+              </p>
+              <p class="services-text">
+                <strong><strong>•</strong> </strong> Particiones y
+                subdivisiones de empresas agropecuarias, participamos en las
+                negociaciones entre partes.
+              </p>
+              <p class="services-text">
+                <strong><strong>•</strong> </strong> Análisis y desarrollo de
+                proyectos de inversión del sector agropecuario, evaluando
+                aspectos técnicos, económicos y estratégicos.
+              </p>
+              <p class="services-text">
+                <strong><strong>•</strong> </strong> Actuamos de forma
+                independiente y con confidencialidad al momento de búsqueda y
+                realización.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-briefcase"></i></div>
+              <h4><a>Administración</a></h4>
+              <p class="services-text">
+                <strong><strong>•</strong> </strong> Nos dedicamos al
+                planeamiento, organización y gestión de operaciones,
+                asesorando en la gestión técnica- agronómica y
+                administrativo-contable.
+              </p>
+              <p class="services-text">
+                <strong><strong>•</strong> </strong> En base a nuestra
+                experiencia en campos propios y de terceros podemos garantizar
+                un buen asesoramiento seguido de la coordinación y seguimiento
+                de los servicios de producción.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-home-alt-2"></i></div>
+              <h4><a>Empresas Familiares</a></h4>
+              <p class="services-text">
+                <strong><strong>•</strong> </strong> Desde Astecna colaboramos
+                en la reestructuración de empresas familiares buscando
+                protejer el patrimonio económico y cultural de la familia.
+              </p>
+              <p class="services-text">
+                <strong><strong>•</strong> </strong> Nuestro objetivo es
+                generar empresas transferibles a los descendientes a través de
+                la búsqueda de armonía entre sus miembros, por medio de pautas
+                claras y equitativas, con el entrenamiento, haciendo énfasis
+                en la comunicación y la prevención de conflictos.
+              </p>
+              <p class="services-text">
+                <strong><strong>•</strong> </strong> Logrando de este modo,
+                empresas que sean un disfrute y sustento para sus miembros,
+                buscando el resguardo del patrimonio familiar.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-leaf"></i></div>
+              <h4><a>Sustentabilidad y Medio Ambiente</a></h4>
+              <div class="services-text">
+                <p>
+                  <strong>• </strong>Realizamos peritajes sobre impacto
+                  ambiental, por ejemplo, en campos con explotación
+                  hidrocarburifera; también evaluamos sustentabilidad de
+                  sistemas productivos en zonas marginales.
+                </p>
+                <p>
+                  <strong>• </strong>Donde podemos evaluar el impacto en
+                  campos por obras civiles, canalizaciones, trazado de
+                  caminos, y alteraciones en el ambiente hechas por el hombre,
+                  pudiéndose demostrar por imágenes satelitales el efecto que
+                  causa en una explotación agropecuaria.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+        <div class="text-center">
+          <h3>Solicitar Servicio</h3>
+          <p>
+            Descubre cómo nuestros servicios pueden ayudarte. ¡Solicita ahora
+            y obtén soluciones profesionales para tus necesidades!
+          </p>
+
+          <a class="cta-btn" href="#contact">Contactar</a>
+        </div>
+      </div>
+    </section>
+    <!-- End Cta Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <p>Nuestro Equipo</p>
+        </div>
+        <div class="section-title">
+          <h3>Socios</h3>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-6 align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+
+                <h4>Ricardo Latour</h4>
+                <span>
+                  Socio fundador de Astecna, en el año 1999.
+                  <div><br /></div>
+                  Cuenta con 39 años de experiencia de trabajo en el sector,
+                  con gran conocimiento del pais y de distintos sistemas de
+                  producción.
+                </span>
+                <div><br /></div>
+                <span>
+                  Es Ingeniero en Producción Agropecuaria de la Universidad
+                  Católica Argentina (UCA), donde fue profesor durante 25
+                  años.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Agustín Braun</h4>
+                <span>
+                  Socio fundador de Astecna, en el año 1999.
+                  <div><br /></div>
+                  Cuenta con 38 años de experiencia en el sector Es Licenciado
+                  en Economía Agraria de la Universidad de Belgrano.
+                  <div><br /></div>
+                  Es administrador y director de empresas agropecuarias, con
+                  experiencia en gestión financiera.
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Matías Villalba</h4>
+                <span>
+                  Asociado a Astecna desde el año 2012.
+                  <div><br /></div>
+                  Es especialista en Sistemas de Información Geográfica (GIS),
+                  con mas de 4.000 casos confeccionados principalmente en
+                  Argentina, y también en Bolivia y Uruguay.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div><br /></div>
+          <div class="section-title">
+            <h3>Asociados</h3>
+          </div>
+          <div class="col-lg-3 col-md-6 align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img"></div>
+              <div class="member-info">
+                <h4>Ing. Agr. Mario Lanari</h4>
+                <span>Especialista en NOA y cultivos intensivos.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img"></div>
+              <div class="member-info">
+                <h4>Lic. Juan Ortiz Basualdo</h4>
+                <span>Administrador de empresas agropecuarias.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img"></div>
+              <div class="member-info">
+                <h4>Ing. Agr. Rubén Oliverio</h4>
+                <span>Especialista en zona Núcleo.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img"></div>
+              <div class="member-info">
+                <h4>Lic. en Edafología Rubén Walter</h4>
+                <span>Especialista en suelos.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img"></div>
+              <div class="member-info">
+                <h4>Lic. En Administración Victoria Latour</h4>
+                <span>Responsable de gestión y planificación financiera de
+                  nuestras administraciones.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img"></div>
+              <div class="member-info">
+                <h4>Ing. Agr. Guillermo Aponte Tinao</h4>
+                <span>Radicado en Santa Cruz de la Sierra, Bolivia. Inversiones y
+                  administraciones de campo.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img"></div>
+              <div class="member-info">
+                <h4>Ing. Carlos Rizo</h4>
+                <span>Especialista en viñedos, cultivos intensivos e
+                  instalaciones industriales.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img"></div>
+              <div class="member-info">
+                <h4>Abogado Guillermo Latour</h4>
+                <span> Derecho comercial y societario.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Team Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="zoom-in">
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="" />
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec
+                  porttitora entum suscipit rhoncus. Accusantium quam,
+                  ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                  risus at semper.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="" />
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse
+                  labore quem cillum quid cillum eram malis quorum velit fore
+                  eram velit sunt aliqua noster fugiat irure amet legam anim
+                  culpa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="" />
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim
+                  sint quorum nulla quem veniam duis minim tempor labore quem
+                  eram duis noster aute amet eram fore quis sint minim.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="" />
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa
+                  multos export minim fugiat minim velit minim dolor enim duis
+                  veniam ipsum anim magna sunt elit fore quem dolore labore
+                  illum veniam.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="" />
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure
+                  aliqua veniam tempor noster veniam enim culpa labore duis
+                  sunt culpa nulla illum cillum fugiat legam esse veniam culpa
+                  fore nisi cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <p>Contacto</p>
+        </div>
+
+        <div>
+          <iframe style="border: 0; width: 100%; height: 270px"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.689756548422!2d-58.39832988514823!3d-34.58671588046383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca98cac2756f%3A0x149b736a7e57f10c!2sAv.+Pueyrred%C3%B3n+2318%2C+C1119ACT+CABA!5e0!3m2!1ses!2sar!4v1495045419666"
+            frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Ubicación:</h4>
+                <p>Avenida Pueyrredón 2318. Piso 5º «K»</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@astecna.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Teléfono</h4>
+                <p><strong>Ricardo Latour:</strong> (011) 5014-4612</p>
+                <p><strong>Matías Villalba:</strong> (011) 5890-2456</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+            <form action="sumbit" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="fullName" placeholder="Nombre completo"
+                    required />
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email_id" id="email_id" placeholder="Tu Email"
+                    required />
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <select type="text" class="form-control" id="subject" required>
+                  <option value="" disabled selected>Servicio</option>
+                  <option>Valuacion de activos</option>
+                  <option>Asesoramiento en compra de campos</option>
+                  <option>Consultoría y Auditorías</option>
+                  <option>Administracion</option>
+                  <option>Empresas Familiares</option>
+                  <option>Sustentabilidad y Medio Ambiente</option>
+                </select>
+              </div>
+              <div class="form-group mt-3">
+                <textarea id="message" class="form-control" name="message" rows="5" placeholder="Mensaje"
+                  required></textarea>
+              </div>
+              <div class="contact-bottom">
+                <div class="g-recaptcha" data-sitekey="6LeE51gnAAAAAD7PgXS7JeQei3SeRfinluQAcLgM"></div>
+                <div class="button-send">
+                  <button onclick="SendMail()" type="submit">Mandar Mensaje</button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; 2023 <strong><span>Astecna</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
+        Designed by
+        <a href="https://bootstrapmade.com/">Astecna Design Team</a>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.all.min.js"></script>
+</body>
+
 </html>
