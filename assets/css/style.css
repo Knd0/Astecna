@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", Light 300;
-  color: #444444;
+  color: #121212;
 }
 
 a {
@@ -22,7 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans", Light 300;
+  font-family: "Open Sans", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -44,12 +44,12 @@ h6 {
 
 .back-to-top i {
   font-size: 28px;
-  color: #151515;
+  color: #ededed;
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #151515;
+  background: #ededed;
 }
 
 .back-to-top:hover i {
@@ -133,7 +133,7 @@ h6 {
 }
 
 #header .logo a {
-  color: #fff;
+  color: #ededed;
 }
 
 #header .logo a span {
@@ -148,7 +148,7 @@ h6 {
 #  Get Startet Button
 --------------------------------------------------------------*/
 .get-started-btn {
-  color: #fff;
+  color: #ededed;
   border-radius: 4px;
   padding: 7px 25px 8px 25px;
   white-space: nowrap;
@@ -198,9 +198,9 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
-  color: #fff;
+  color: #ededed;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -215,7 +215,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: #00408b;
 }
 
@@ -229,7 +229,7 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: #ededed;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -252,11 +252,11 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul li:hover > a {
   background-color: #00408b;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -268,7 +268,7 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -280,16 +280,20 @@ h6 {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
+}
+
+.button-trans {
+  margin-left: 50px;
 }
 
 /**
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: #ededed;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -333,7 +337,7 @@ h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #ededed;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -347,7 +351,7 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover > a {
   color: #151515;
   background-color: #00408b;
 }
@@ -365,7 +369,7 @@ h6 {
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #fff;
+  background: #ededed;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -384,11 +388,11 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
+.navbar-mobile .dropdown ul li:hover > a {
   background-color: #00408b;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
 
@@ -424,7 +428,7 @@ h6 {
   font-size: 56px;
   font-weight: 700;
   line-height: 64px;
-  color: #fff;
+  color: #ededed;
   font-family: "Poppins", sans-serif;
 }
 
@@ -462,7 +466,7 @@ h6 {
 }
 
 #hero .icon-box h3 a {
-  color: #fff;
+  color: #ededed;
   transition: ease-in-out 0.3s;
 }
 
@@ -537,17 +541,8 @@ section {
   margin: 0 0 5px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #515151;
+  color: #02bd0b;
   font-family: "Poppins", sans-serif;
-}
-
-.section-title h3::after {
-  content: "";
-  width: 120px;
-  height: 1px;
-  display: inline-block;
-  background: #02bd0b;
-  margin: 4px 10px;
 }
 
 .section-title p {
@@ -556,13 +551,30 @@ section {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #151515;
+  font-family: "Open Sans", sans-serif;
+  color: #00408b;
+}
+
+.section-title p::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #02bd0b;
+  margin: 10px 10px;
 }
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about {
+  background: #ededed;
+}
+
+.about-text {
+  text-align: justify;
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 28px;
@@ -596,18 +608,19 @@ section {
 --------------------------------------------------------------*/
 .clients {
   padding-top: 20px;
+  background: #ededed;
 }
 
 .clients .swiper-slide img {
   opacity: 0.5;
   transition: 0.3s;
   filter: grayscale(100);
-
 }
 
 .clients .swiper-slide img:hover {
   filter: none;
   opacity: 1;
+  padding-right: 0;
 }
 
 .clients .swiper-pagination {
@@ -618,7 +631,7 @@ section {
 .clients .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: #ededed;
   opacity: 1;
   background-color: #ddd;
 }
@@ -628,8 +641,53 @@ section {
 }
 
 .icbc {
+  width: 90px;
+  height: 60px;
+}
+
+.hipotecario {
+  width: 150px;
+  height: 60px;
+}
+
+.bbva {
   width: 100px;
-  height: 85px;
+  height: 30px;
+}
+
+.patagonia {
+  width: 100px;
+  height: 35px;
+}
+
+.peñaflor {
+  width: 100px;
+  height: 60px;
+}
+
+.rabobank {
+  width: 110px;
+  height: 40px;
+}
+
+.melicura {
+  width: 150px;
+  height: 50px;
+}
+
+.galicia {
+  width: 120px;
+  height: 40px;
+}
+
+.HSBC {
+  width: 100px;
+  height: 60px;
+}
+
+.img-client {
+  width: 95px;
+  height: 50px;
 }
 
 /*--------------------------------------------------------------
@@ -637,6 +695,7 @@ section {
 --------------------------------------------------------------*/
 .features {
   padding-top: 20px;
+  background: #ededed;
 }
 
 .features .icon-box {
@@ -671,12 +730,20 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services {
+  background: #ededed;
+}
+
+.services-text {
+  text-align: justify;
+}
+
 .services .icon-box {
   text-align: center;
   border: 1px solid #ebebeb;
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
+  background: #e9e9e9;
 }
 
 .services .icon-box .icon {
@@ -693,7 +760,7 @@ section {
 }
 
 .services .icon-box .icon i {
-  color: #151515;
+  color: #ededed;
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }
@@ -720,7 +787,7 @@ section {
 }
 
 .services .icon-box:hover {
-  border-color: #fff;
+  border-color: #ededed;
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   transform: translateY(-10px);
 }
@@ -729,23 +796,24 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/cta-bg.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
 
 .cta h3 {
-  color: #fff;
+  color: #ededed;
   font-size: 28px;
   font-weight: 700;
 }
 
 .cta p {
-  color: #fff;
+  color: #ededed;
 }
 
 .cta .cta-btn {
-  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
@@ -754,8 +822,8 @@ section {
   border-radius: 4px;
   transition: 0.5s;
   margin-top: 10px;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #ededed;
+  color: #ededed;
 }
 
 .cta .cta-btn:hover {
@@ -786,7 +854,7 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #444444;
+  color: #ededed;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
   border-radius: 3px;
@@ -845,7 +913,7 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #fff;
+  color: #ededed;
   font-weight: 600;
 }
 
@@ -864,7 +932,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #fff;
+  color: #ededed;
   margin: 0 5px 0 0;
   font-size: 28px;
   display: inline-block;
@@ -903,15 +971,21 @@ section {
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: #ededed;
   opacity: 1;
   border: 1px solid #00408b;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: #00408b;
 }
 
@@ -934,7 +1008,7 @@ section {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -955,6 +1029,10 @@ section {
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
+.counts {
+  background: #ededed;
+}
+
 .counts .content {
   padding: 30px 0;
 }
@@ -993,7 +1071,7 @@ section {
 .counts .content .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 50px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   color: #3b3b3b;
 }
@@ -1004,7 +1082,7 @@ section {
   margin-top: 20px;
   color: #3b3b3b;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
@@ -1066,7 +1144,7 @@ section {
 
 .testimonials .testimonial-item {
   text-align: center;
-  color: #fff;
+  color: #ededed;
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1080,7 +1158,7 @@ section {
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #fff;
+  color: #ededed;
 }
 
 .testimonials .testimonial-item h4 {
@@ -1147,7 +1225,7 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team {
-  background: #fff;
+  background: #ededed;
   padding: 60px 0;
 }
 
@@ -1155,7 +1233,7 @@ section {
   margin-bottom: 20px;
   overflow: hidden;
   border-radius: 5px;
-  background: #fff;
+  background: #ededed;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -1214,7 +1292,7 @@ section {
   display: block;
   font-size: 13px;
   font-weight: 400;
-  color: #aaaaaa;
+  color: #636363;
 }
 
 .team .member .member-info p {
@@ -1232,15 +1310,19 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact {
+  background: #ededed;
+}
+
 .contact .info {
   width: 100%;
-  background: #fff;
+  background: #ededed;
 }
 
 .contact .info i {
   font-size: 20px;
   background: #00408b;
-  color: #151515;
+  color: #ededed;
   float: left;
   width: 44px;
   height: 44px;
@@ -1256,7 +1338,7 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #151515;
+  color: #ededed;
 }
 
 .contact .info p {
@@ -1273,7 +1355,7 @@ section {
 
 .contact .php-email-form {
   width: 100%;
-  background: #fff;
+  background: #ededed;
 }
 
 .contact .php-email-form .form-group {
@@ -1282,20 +1364,20 @@ section {
 
 .contact .php-email-form .error-message {
   display: none;
-  color: #fff;
+  color: #ededed;
   background: #ed3c0d;
   text-align: left;
   padding: 15px;
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
 .contact .php-email-form .sent-message {
   display: none;
-  color: #fff;
+  color: #ededed;
   background: #18d26e;
   text-align: center;
   padding: 15px;
@@ -1304,7 +1386,7 @@ section {
 
 .contact .php-email-form .loading {
   display: none;
-  background: #fff;
+  background: #ededed;
   text-align: center;
   padding: 15px;
 }
@@ -1342,16 +1424,16 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: #00408b;
   border: 0;
   padding: 10px 24px;
-  color: #151515;
+  color: #ededed;
   transition: 0.4s;
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #ffcd6b;
 }
 
@@ -1388,11 +1470,11 @@ section {
   margin: 0;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #2f2f2f;
@@ -1423,7 +1505,7 @@ section {
 #footer {
   background: black;
   padding: 0 0 30px 0;
-  color: #fff;
+  color: #ededed;
   font-size: 14px;
 }
 
@@ -1455,14 +1537,14 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
-  color: #fff;
+  color: #ededed;
 }
 
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
   background: #292929;
-  color: #fff;
+  color: #ededed;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1482,7 +1564,7 @@ section {
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: 600;
-  color: #fff;
+  color: #ededed;
   position: relative;
   padding-bottom: 12px;
 }
@@ -1515,7 +1597,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #fff;
+  color: #ededed;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -1527,19 +1609,19 @@ section {
 
 #footer .footer-top .footer-newsletter form {
   margin-top: 30px;
-  background: #fff;
+  background: #ededed;
   padding: 6px 10px;
   position: relative;
   border-radius: 4px;
 }
 
-#footer .footer-top .footer-newsletter form input[type=email] {
+#footer .footer-top .footer-newsletter form input[type="email"] {
   border: 0;
   padding: 4px;
   width: calc(100% - 110px);
 }
 
-#footer .footer-top .footer-newsletter form input[type=submit] {
+#footer .footer-top .footer-newsletter form input[type="submit"] {
   position: absolute;
   top: 0;
   right: -2px;
@@ -1554,7 +1636,7 @@ section {
   border-radius: 0 4px 4px 0;
 }
 
-#footer .footer-top .footer-newsletter form input[type=submit]:hover {
+#footer .footer-top .footer-newsletter form input[type="submit"]:hover {
   background: #ffcd6b;
 }
 
@@ -1567,5 +1649,5 @@ section {
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
-  color: #fff;
+  color: #ededed;
 }
