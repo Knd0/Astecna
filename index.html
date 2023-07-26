@@ -47,6 +47,16 @@
         });
       });
     </script>
+    <!-- Emailjs -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("dBj4hlGAaf1BeoX53");
+      })();
+    </script>
   </head>
 
   <body>
@@ -778,14 +788,14 @@
             </div>
 
             <div class="col-lg-8 mt-5 mt-lg-0">
-              <form method="post" role="form" class="php-email-form">
+              <form action="sumbit" role="form" class="php-email-form">
                 <div class="row">
                   <div class="col-md-6 form-group">
                     <input
                       type="text"
                       name="name"
                       class="form-control"
-                      id="name"
+                      id="fullName"
                       placeholder="Nombre completo"
                       required
                     />
@@ -794,8 +804,8 @@
                     <input
                       type="email"
                       class="form-control"
-                      name="email"
-                      id="email"
+                      name="email_id"
+                      id="email_id"
                       placeholder="Tu Email"
                       required
                     />
@@ -805,25 +815,21 @@
                   <select
                     type="text"
                     class="form-control"
-                    name="subject"
                     id="subject"
                     required
                   >
                     <option value="" disabled>Servicio</option>
-                    <option value="Hola">Valuacion de Activos</option>
-                    <option value="Hola">
-                      Asesoramiento en compra de campos
-                    </option>
-                    <option value="Hola">Consultoría y Auditorías</option>
-                    <option value="Hola">Administracion</option>
-                    <option value="Hola">Empresas Familiares</option>
-                    <option value="Hola">
-                      Sustentabilidad y Medio Ambiente
-                    </option>
+                    <option>Valuacion de Activos</option>
+                    <option>Asesoramiento en compra de campos</option>
+                    <option>Consultoría y Auditorías</option>
+                    <option>Administracion</option>
+                    <option>Empresas Familiares</option>
+                    <option>Sustentabilidad y Medio Ambiente</option>
                   </select>
                 </div>
                 <div class="form-group mt-3">
                   <textarea
+                    id="message"
                     class="form-control"
                     name="message"
                     rows="5"
@@ -839,9 +845,9 @@
                   </div>
                 </div>
                 <div class="text-center">
-                  <button type="submit">Mandar Mensaje</button>
+                  <button onclick="SendMail()" type="submit">Mandar Mensaje</button>
                 </div>
-              </form>
+              
             </div>
           </div>
         </div>
