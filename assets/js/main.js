@@ -339,16 +339,59 @@
 /**
  * Emailjs
  */
+function isValidEmail(email) {
+  // Expresión regular para verificar la sintaxis del correo electrónico
+  var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailPattern.test(email);
+}
+
 function SendMail() {
+  var fullName = document.getElementById("fullName").value;
+  var emailId = document.getElementById("email_id").value;
+  var subject = document.getElementById("subject").value;
+  var message = document.getElementById("message").value;
+
+  var recaptchaResponse = grecaptcha.getResponse();
+  if (!recaptchaResponse) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Please verify that you are not a robot.',
+    });
+    return false; // Detener el envío del formulario
+  }
+
+  // Verificar si los campos están vacíos
+  if (!fullName || !emailId || !subject || !message) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Please fill in all the fields before sending the email.',
+    });
+    return; // Detener la ejecución de la función
+  }
+
   var params = {
-    from_name: document.getElementById("fullName").value,
-    email_id: document.getElementById("email_id").value,
-    subject: document.getElementById("subject").value,
-    message: document.getElementById("message").value,
+    from_name: fullName,
+    email_id: emailId,
+    subject: subject,
+    message: message,
   };
+
   emailjs
     .send("service_os405nl", "template_z6sz1th", params)
     .then(function (res) {
-      alert("Success!" + res.status);
+      Swal.fire({
+        icon: 'success',
+        title: 'Success!',
+        text: 'Email sent successfully!',
+      });
+    })
+    .catch(function (error) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Something went wrong! Please try again.',
+      });
     });
 }
