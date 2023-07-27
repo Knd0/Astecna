@@ -623,71 +623,119 @@ section {
   padding-right: 0;
 }
 
-.clients .swiper-pagination {
-  margin-top: 20px;
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: #ededed;
+  white-space: nowrap;
   position: relative;
 }
 
-.clients .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #ededed;
-  opacity: 1;
-  background-color: #ddd;
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
 }
 
-.clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #00408b;
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #ededed);
 }
 
-.icbc {
-  width: 90px;
-  height: 60px;
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ededed);
 }
 
-.hipotecario {
-  width: 150px;
-  height: 60px;
+.logos:hover .logos-slide {
+  animation-play-state: paused;
 }
 
-.bbva {
-  width: 100px;
-  height: 30px;
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
 }
 
-.patagonia {
-  width: 100px;
-  height: 35px;
-}
-
-.peñaflor {
-  width: 100px;
-  height: 60px;
-}
-
-.rabobank {
-  width: 110px;
-  height: 40px;
-}
-
-.melicura {
-  width: 150px;
+.logos-slide img {
   height: 50px;
+  margin: 0 40px;
 }
 
-.galicia {
-  width: 120px;
-  height: 40px;
+.logos2 {
+  overflow: hidden;
+  padding: 60px 0;
+  background: #ededed;
+  white-space: nowrap;
+  position: relative;
 }
 
-.HSBC {
-  width: 100px;
-  height: 60px;
+.logos2:before,
+.logos2:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
 }
 
-.img-client {
-  width: 95px;
+.logos2:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #ededed);
+}
+
+.logos2:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ededed);
+}
+
+.logos2:hover .logos-slide2 {
+  animation-play-state: paused;
+}
+
+.logos-slide2 {
+  display: inline-block;
+  animation: 35s slide2 infinite linear;
+}
+
+.logos-slide2 img {
   height: 50px;
+  margin: 0 40px;
+}
+
+.logos-slide2.reverse {
+  animation: 35s slide2-reverse infinite linear;
+}
+
+@keyframes slide2-reverse {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 /*--------------------------------------------------------------
