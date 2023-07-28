@@ -653,7 +653,7 @@ section {
 }
 
 .logos-slide img {
-  height: 50px;
+  height: 60px;
   margin: 0 40px;
 }
 
@@ -695,21 +695,8 @@ section {
 }
 
 .logos-slide2 img {
-  height: 50px;
+  height: 60px;
   margin: 0 40px;
-}
-
-.logos-slide2.reverse {
-  animation: 35s slide2-reverse infinite linear;
-}
-
-@keyframes slide2-reverse {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
 }
 
 /*--------------------------------------------------------------

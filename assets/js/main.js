@@ -225,9 +225,9 @@ function SendMail() {
   var recaptchaResponse = grecaptcha.getResponse();
   if (!recaptchaResponse) {
     Swal.fire({
-      icon: 'error',
-      title: 'Oops...',
-      text: 'Please verify that you are not a robot.',
+      icon: "error",
+      title: "Oops...",
+      text: "Please verify that you are not a robot.",
     });
     return false; // Detener el envío del formulario
   }
@@ -235,9 +235,9 @@ function SendMail() {
   // Verificar si los campos están vacíos
   if (!fullName || !emailId || !subject || !message) {
     Swal.fire({
-      icon: 'error',
-      title: 'Oops...',
-      text: 'Please fill in all the fields before sending the email.',
+      icon: "error",
+      title: "Oops...",
+      text: "Please fill in all the fields before sending the email.",
     });
     return; // Detener la ejecución de la función
   }
@@ -253,16 +253,26 @@ function SendMail() {
     .send("service_os405nl", "template_z6sz1th", params)
     .then(function (res) {
       Swal.fire({
-        icon: 'success',
-        title: 'Success!',
-        text: 'Email sent successfully!',
+        icon: "success",
+        title: "Success!",
+        text: "Email sent successfully!",
       });
     })
     .catch(function (error) {
       Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: 'Something went wrong! Please try again.',
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong! Please try again.",
       });
     });
+
+    window.onload = function() {
+      var logosSlide = document.querySelector(".logos-slide");
+      var logosSlide2 = document.querySelector(".logos-slide2");
+  
+      logosSlide.classList.add("slide"); // Agrega la clase de animación al primer slider
+      logosSlide2.classList.add("slide2"); // Agrega la clase de animación al segundo slider
+    };
 }
+
+
