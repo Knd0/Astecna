@@ -190,7 +190,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: #00408b;
+  color: #76b858;
 }
 
 .navbar .dropdown ul {
@@ -407,7 +407,7 @@ h6 {
 }
 
 #hero h1 span {
-  color: #00408b;
+  color: #76b858;
 }
 
 #hero h2 {
@@ -799,7 +799,7 @@ section {
 }
 
 .services .icon-box h4 a:hover {
-  color: #00408b;
+  color: #76b858;
 }
 
 .services .icon-box p {
@@ -808,6 +808,9 @@ section {
   margin-bottom: 0;
 }
 
+.services .icon-box strong {
+ color: #76b858;
+}
 .services .icon-box:hover {
   border-color: #ededed;
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
