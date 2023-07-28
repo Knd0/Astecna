@@ -1362,6 +1362,16 @@ section {
   background: #ededed;
 }
 
+.contact-bottom {
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+}
+
+.g-recaptcha {
+  position: relative;
+}
+
 .contact .info {
   width: 100%;
   background: #ededed;
@@ -1386,7 +1396,7 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #ededed;
+  color: #151515;
 }
 
 .contact .info p {

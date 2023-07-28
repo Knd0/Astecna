@@ -172,135 +172,6 @@
   }
 
   /**
-   * Clients Slider
-   */
-  new Swiper(".clients-slider1", {
-    speed: 400,
-    loop: true,
-    rtl: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    slidesPerView: "auto",
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-      clickable: true,
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 40,
-      },
-      480: {
-        slidesPerView: 3,
-        spaceBetween: 60,
-      },
-      640: {
-        slidesPerView: 4,
-        spaceBetween: 80,
-      },
-      992: {
-        slidesPerView: 6,
-        spaceBetween: 120,
-      },
-    },
-  });
-
-  new Swiper(".clients-slider2", {
-    direction: "horizontal",
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    slidesPerView: "auto",
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-      clickable: true,
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 40,
-      },
-      480: {
-        slidesPerView: 3,
-        spaceBetween: 60,
-      },
-      640: {
-        slidesPerView: 4,
-        spaceBetween: 80,
-      },
-      992: {
-        slidesPerView: 6,
-        spaceBetween: 120,
-      },
-    },
-  });
-
-  /**
-   * Porfolio isotope and filter
-   */
-  window.addEventListener("load", () => {
-    let portfolioContainer = select(".portfolio-container");
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: ".portfolio-item",
-      });
-
-      let portfolioFilters = select("#portfolio-flters li", true);
-
-      on(
-        "click",
-        "#portfolio-flters li",
-        function (e) {
-          e.preventDefault();
-          portfolioFilters.forEach(function (el) {
-            el.classList.remove("filter-active");
-          });
-          this.classList.add("filter-active");
-
-          portfolioIsotope.arrange({
-            filter: this.getAttribute("data-filter"),
-          });
-          portfolioIsotope.on("arrangeComplete", function () {
-            AOS.refresh();
-          });
-        },
-        true
-      );
-    }
-  });
-
-  /**
-   * Initiate portfolio lightbox
-   */
-  const portfolioLightbox = GLightbox({
-    selector: ".portfolio-lightbox",
-  });
-
-  /**
-   * Portfolio details slider
-   */
-  new Swiper(".portfolio-details-slider", {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-      clickable: true,
-    },
-  });
-
-  /**
    * Testimonials slider
    */
   new Swiper(".testimonials-slider", {
@@ -339,16 +210,59 @@
 /**
  * Emailjs
  */
+function isValidEmail(email) {
+  // Expresión regular para verificar la sintaxis del correo electrónico
+  var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailPattern.test(email);
+}
+
 function SendMail() {
+  var fullName = document.getElementById("fullName").value;
+  var emailId = document.getElementById("email_id").value;
+  var subject = document.getElementById("subject").value;
+  var message = document.getElementById("message").value;
+
+  var recaptchaResponse = grecaptcha.getResponse();
+  if (!recaptchaResponse) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Please verify that you are not a robot.',
+    });
+    return false; // Detener el envío del formulario
+  }
+
+  // Verificar si los campos están vacíos
+  if (!fullName || !emailId || !subject || !message) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Please fill in all the fields before sending the email.',
+    });
+    return; // Detener la ejecución de la función
+  }
+
   var params = {
-    from_name: document.getElementById("fullName").value,
-    email_id: document.getElementById("email_id").value,
-    subject: document.getElementById("subject").value,
-    message: document.getElementById("message").value,
+    from_name: fullName,
+    email_id: emailId,
+    subject: subject,
+    message: message,
   };
+
   emailjs
     .send("service_os405nl", "template_z6sz1th", params)
     .then(function (res) {
-      alert("Success!" + res.status);
+      Swal.fire({
+        icon: 'success',
+        title: 'Success!',
+        text: 'Email sent successfully!',
+      });
+    })
+    .catch(function (error) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Something went wrong! Please try again.',
+      });
     });
 }

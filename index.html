@@ -1,167 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Astecna</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <!-- Favicons -->
-    <link href="assets/img/logos/logo.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+  <title>Astecna</title>
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
-    />
+  <!-- Favicons -->
+  <link href="assets/img/logos/logo.png" rel="icon" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
 
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <!-- Translate Plugin -->
-    <script src="//cdn.conveythis.com/javascript/conveythis-initializer.js"></script>
-    <script type="text/javascript">
-      document.addEventListener("DOMContentLoaded", function (e) {
-        ConveyThis_Initializer.init({
-          api_key: "pub_5b780daa28c513535f6d5bd839f009e6",
-        });
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <!-- Translate Plugin -->
+  <script src="//cdn.conveythis.com/javascript/conveythis-initializer.js"></script>
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function (e) {
+      ConveyThis_Initializer.init({
+        api_key: "pub_5b780daa28c513535f6d5bd839f009e6",
       });
-    </script>
-    <!-- Emailjs -->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("dBj4hlGAaf1BeoX53");
-      })();
-    </script>
-  </head>
+    });
+  </script>
+  <!-- Emailjs -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("dBj4hlGAaf1BeoX53");
+    })();
+  </script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
 
-  <body>
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top">
-      <div
-        class="container d-flex align-items-center justify-content-lg-between"
-      >
-        <!-- <h1 class="logo me-auto me-lg-0">
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+      <!-- <h1 class="logo me-auto me-lg-0">
           <a href="index.html">Astecna<span>.</span></a>
         </h1> -->
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="index.html" class="me-auto me-lg-0"
-          ><img
-            src="assets/img/logos/Logo-blanco.png"
-            alt=""
-            class="img-fluid"
-            style="width: 100px; height: 100px"
-        /></a>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="me-auto me-lg-0"><img src="assets/img/logos/Logo-blanco.png" alt="" class="img-fluid"
+          style="width: 100px; height: 100px" /></a>
 
-        <nav id="navbar" class="navbar order-last order-lg-0">
-          <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-            <li><a class="nav-link scrollto" href="#about">Nosotros</a></li>
-            <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
-            <li><a class="nav-link scrollto" href="#team">Equipo</a></li>
-            <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
-          </ul>
-          <div id="translate" class="button-trans"></div>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-        <!-- .navbar -->
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Nosotros</a></li>
+          <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
+          <li><a class="nav-link scrollto" href="#team">Equipo</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+        </ul>
+        <div id="translate" class="button-trans"></div>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
 
-        <a></a>
+      <a></a>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-10 col-lg-10">
+          <h1>
+            <span>Astecna</span> es un Proveedor de productos para agricultura
+            y ganadería<span>.</span>
+          </h1>
+          <h2>Asesoría tecnológica agropecuaria</h2>
+        </div>
       </div>
-    </header>
-    <!-- End Header -->
+    </div>
+  </section>
+  <!-- End Hero -->
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center justify-content-center">
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
       <div class="container" data-aos="fade-up">
-        <div
-          class="row justify-content-center"
-          data-aos="fade-up"
-          data-aos-delay="150"
-        >
-          <div class="col-xl-10 col-lg-10">
-            <h1>
-              <span>Astecna</span> es un Proveedor de productos para agricultura
-              y ganadería<span>.</span>
-            </h1>
-            <h2>Asesoría tecnológica agropecuaria</h2>
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <div class="section-title">
+              <p>Sobre Nosotros</p>
+            </div>
+
+            <p class="fst-italic about-text">
+              Somos una prestadora de servicios agropecuarios con una
+              trayectoria de 24 años en el mercado. Con más de 6.000 casos
+              analizados en Argentina, Uruguay y Bolivia, somos referentes en
+              tasaciones de campos y estamos comprometidos con brindar
+              soluciones de calidad. Nuestros servicios incluyen particiones y
+              escisiones, asesoramiento en inversiones y administración, lo
+              que nos permite atender las necesidades tanto de clientes
+              corporativos como de familias y particulares.
+            </p>
+
+            <p class="fst-italic about-text">
+              Con un equipo de expertos altamente capacitados, nos enfocamos
+              en proporcionar asesoría integral y personalizada para maximizar
+              el valor y el rendimiento de las inversiones agropecuarias de
+              nuestros clientes. Nuestra experiencia y profesionalismo nos han
+              permitido destacarnos en el mercado a lo largo de los años.
+              Trabajamos con pasión y compromiso para satisfacer las
+              necesidades únicas de cada cliente y seguir siendo líderes en el
+              sector agropecuario.
+            </p>
           </div>
         </div>
       </div>
     </section>
-    <!-- End Hero -->
+    <!-- End About Section -->
 
-    <main id="main">
-      <!-- ======= About Section ======= -->
-      <section id="about" class="about">
-        <div class="container" data-aos="fade-up">
-          <div class="row">
-            <div
-              class="col-lg-6 order-1 order-lg-2"
-              data-aos="fade-left"
-              data-aos-delay="100"
-            >
-              <img src="assets/img/about.jpg" class="img-fluid" alt="" />
-            </div>
-            <div
-              class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
-              data-aos="fade-right"
-              data-aos-delay="100"
-            >
-              <div class="section-title">
-                <p>Sobre Nosotros</p>
-              </div>
-
-              <p class="fst-italic about-text">
-                Somos una prestadora de servicios agropecuarios con una
-                trayectoria de 24 años en el mercado. Con más de 6.000 casos
-                analizados en Argentina, Uruguay y Bolivia, somos referentes en
-                tasaciones de campos y estamos comprometidos con brindar
-                soluciones de calidad. Nuestros servicios incluyen particiones y
-                escisiones, asesoramiento en inversiones y administración, lo
-                que nos permite atender las necesidades tanto de clientes
-                corporativos como de familias y particulares.
-              </p>
-
-              <p class="fst-italic about-text">
-                Con un equipo de expertos altamente capacitados, nos enfocamos
-                en proporcionar asesoría integral y personalizada para maximizar
-                el valor y el rendimiento de las inversiones agropecuarias de
-                nuestros clientes. Nuestra experiencia y profesionalismo nos han
-                permitido destacarnos en el mercado a lo largo de los años.
-                Trabajamos con pasión y compromiso para satisfacer las
-                necesidades únicas de cada cliente y seguir siendo líderes en el
-                sector agropecuario.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End About Section -->
+  
 
       <!-- ======= Clients Section ======= -->
       <section id="clients" class="clients">
@@ -797,16 +769,8 @@
           <a href="https://bootstrapmade.com/">Astecna Design Team</a>
         </div>
       </div>
-    </footer>
-    <!-- End Footer -->
-
-    <div id="preloader"></div>
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
-
+    </section>
+    
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
@@ -823,8 +787,9 @@
       var copy2 = document.querySelector(".logos-slide2").cloneNode(true);
       document.querySelector(".logos2").appendChild(copy2);
     </script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.all.min.js"></script>
+</body>
 
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-  </body>
 </html>
