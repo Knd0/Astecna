@@ -250,7 +250,7 @@ function SendMail() {
   };
 
   emailjs
-    .send("service_os405nl", "template_z6sz1th", params) // service_177cxke
+    .send("service_177cxke", "template_z6sz1th", params)
     .then(function (res) {
       Swal.fire({
         icon: "success",
