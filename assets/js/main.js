@@ -227,7 +227,7 @@ function SendMail() {
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "Please verify that you are not a robot.",
+      text: "Por favor verifique que no es un robot.",
     });
     return false; // Detener el envío del formulario
   }
@@ -237,7 +237,7 @@ function SendMail() {
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "Please fill in all the fields before sending the email.",
+      text: "Por favor, rellene todos los campos antes de enviar el correo electrónico.",
     });
     return; // Detener la ejecución de la función
   }
@@ -255,14 +255,14 @@ function SendMail() {
       Swal.fire({
         icon: "success",
         title: "Success!",
-        text: "Email sent successfully!",
+        text: "Email enviado correctamente!",
       });
     })
     .catch(function (error) {
       Swal.fire({
         icon: "error",
         title: "Oops...",
-        text: "Something went wrong! Please try again.",
+        text: "Algo salió mal! Porfavor intente nuevamente.",
       });
     });
 }
