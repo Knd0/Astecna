@@ -250,7 +250,7 @@ function SendMail() {
   };
 
   emailjs
-    .send("service_os405nl", "template_z6sz1th", params)
+    .send("service_os405nl", "template_z6sz1th", params) // service_177cxke
     .then(function (res) {
       Swal.fire({
         icon: "success",
@@ -265,14 +265,6 @@ function SendMail() {
         text: "Something went wrong! Please try again.",
       });
     });
-
-    window.onload = function() {
-      var logosSlide = document.querySelector(".logos-slide");
-      var logosSlide2 = document.querySelector(".logos-slide2");
-  
-      logosSlide.classList.add("slide"); // Agrega la clase de animación al primer slider
-      logosSlide2.classList.add("slide2"); // Agrega la clase de animación al segundo slider
-    };
 }
 
 
