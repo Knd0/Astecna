@@ -204,6 +204,109 @@ $(function () {
         }
       });
     });
+    //Contact-mid
+    $("#cta .text-center h3").text("Request Service");
+    $("#cta .text-center p").text("Find out how our services can help you. Apply now and get professional solutions for your needs!");
+    $("#cta .text-center a").text("Contact");
+    //Team
+    $("#team .section-title p").text("Our Team");
+    $("#team .section-title h3").eq(0).text("Partners");
+    //Partners
+    //Item1
+    $(document).ready(function() {
+        $('.member-info:eq(0) span:nth-of-type(1)').text('Founding partner of Astecna, in 1999.');
+        $('.member-info:eq(0) span:nth-of-type(2)').text('He has 39 years of work experience in the sector, with great knowledge of the country and of different production systems.');
+        $('.member-info:eq(0) span:nth-of-type(3)').text('He is an Agricultural Production Engineer from the Argentine Catholic University (UCA), where he was a professor for 25 years.');
+    });
+    //Item2
+    $(document).ready(function() {
+        $('.member-info:eq(1) span:nth-of-type(1)').text('Founding partner of Astecna, in 1999.');
+        $('.member-info:eq(1) span:nth-of-type(2)').text('He has 38 years of experience in the sector. He has a degree in Agricultural Economics from the University of Belgrano.');
+        $('.member-info:eq(1) span:nth-of-type(3)').text('He works as an administrator and director of agricultural companies, with experience in financial management.');
+    });
+    //Item3
+    $(document).ready(function() {
+        $('.member-info:eq(2) span:nth-of-type(1)').text('Partner since 2012.');
+        $('.member-info:eq(2) span:nth-of-type(2)').text('He is a specialist in Geographic Information Systems (GIS), with more than 4,000 cases made mainly in Argentina, Bolivia, and Uruguay.');
+    });
+    //Associates
+    $("#team .section-title h3").eq(1).text("Associates");
+    //Item1
+    $(document).ready(function() {
+        $('.member-info:eq(3) h4').text('Agricultural Engineer. Mario Lanari');
+        $('.member-info:eq(3) span').text('Specialist in NOA and intensive crops.');
+    });
+    //Item2
+    $(document).ready(function() {
+        $('.member-info:eq(4) h4').text('BBA. Juan Ortiz Basualdo');
+        $('.member-info:eq(4) span').text('Agricultural business administrator.');
+    });
+    //Item3
+    $(document).ready(function() {
+        $('.member-info:eq(5) h4').text('Agricultural Engineer. Rubén Oliver');
+        $('.member-info:eq(5) span').text('Core zone specialist.');
+    });
+    //Item4
+    $(document).ready(function() {
+        $('.member-info:eq(6) h4').text('Graduate in Edaphology. Rubén Walter');
+        $('.member-info:eq(6) span').text('Soil specialist.');
+    });
+    //Item5
+    $(document).ready(function() {
+        $('.member-info:eq(7) h4').text('BBA. Victoria Latour');
+        $('.member-info:eq(7) span').text('Responsible for management and financial planning of our administrations.');
+    });
+    //Item6
+    $(document).ready(function() {
+        $('.member-info:eq(8) h4').text('Agricultural Engineer. Guillermo Aponte Tinao');
+        $('.member-info:eq(8) span').text('Investments and field administrations.');
+    });
+    //Item7
+    $(document).ready(function() {
+        $('.member-info:eq(9) h4').text('Engineer Carlos Rizo');
+        $('.member-info:eq(9) span').text('Specialist in vineyards, intensive crops and industrial facilities.');
+    });
+    //Item8
+    $(document).ready(function() {
+        $('.member-info:eq(10) h4').text('Lawyer Guillermo Latour');
+        $('.member-info:eq(10) span').text('Commercial and corporate law.');
+    });
+    $(document).ready(function() {
+        // Apuntar a cada span dentro de los elementos con la clase .testimonial-item
+        $('#testimonials .testimonial-item span').each(function(index) {
+          // Cambiar el texto de cada span individualmente
+          if (index === 0){
+          } else if (index === 8){
+            $(this).text('Due to photosynthesis, atmospheric CO2 is transformed into carbohydrate chains, forming leaves, stems, cell content (soluble sugars, soluble proteins and others) and by roots...');
+          } else if (index === 9){
+            $(this).text('See more');
+          } else if (index === 10){
+            $(this).text('Years ago I was hired to evaluate a field in the Salado Basin...');
+          } else if (index === 11){
+            $(this).text('See more');
+          } else if (index === 12){
+            $(this).text('There are factors that clearly identify mature and formed countries or immature "developing"...');
+          } else if (index === 13){
+            $(this).text('See more');
+          } else if (index === 14){
+            $(this).text('The multiplication of structural expenses and less competitiveness are among the main damages; Greater communication can favor joint management...');
+          } else if (index === 15){
+            $(this).text('See more');
+          }
+        });
+      });
+    //Contact
+    $("#contact .section-title p").text("Contact");
+    $("#contact .address h4").text("Location:");
+    $("#contact .phone h4").text("Telephone:");
+    $(document).ready(function() {
+        $('#fullName').attr('placeholder', 'Full Name');
+        $('#email_id').attr('placeholder', 'Your Email');
+        $('#message').attr('placeholder', 'Message');
+        $('#service-option').text('Service');
+      });
+
+
   });
 });
 
@@ -407,5 +510,109 @@ $(function () {
       });
     });
     //Contact-mid
-  });
+    $("#cta .text-center h3").text("Solicitar Servicio");
+    $("#cta .text-center p").text("Descubre cómo nuestros servicios pueden ayudarte. ¡Solicita ahora y obtén soluciones profesionales para tus necesidades!");
+    $("#cta .text-center a").text("Contactar");
+    //Team
+    $("#team .section-title p").text("Equipo");
+    $("#team .section-title h3").eq(0).text("SOCIOS");
+    //Partners
+    //Item1
+    $(document).ready(function() {
+        $('.member-info:eq(0) span:nth-of-type(1)').text('Socio fundador de Astecna, en el año 1999.');
+        $('.member-info:eq(0) span:nth-of-type(2)').text('Cuenta con 39 años de experiencia de trabajo en el sector, con gran conocimiento del pais y de distintos sistemas de producción.');
+        $('.member-info:eq(0) span:nth-of-type(3)').text('Es Ingeniero en Producción Agropecuaria de la Universidad Católica Argentina (UCA), donde fue profesor durante 25 años.');
+    });
+    //Item2
+    $(document).ready(function() {
+        $('.member-info:eq(1) span:nth-of-type(1)').text('Socio fundador de Astecna, en el año 1999.');
+        $('.member-info:eq(1) span:nth-of-type(2)').text('Cuenta con 38 años de experiencia en el sector. Es Licenciado en Economía Agraria de la Universidad de Belgrano.');
+        $('.member-info:eq(1) span:nth-of-type(3)').text('Es administrador y director de empresas agropecuarias, con experiencia en gestión financiera.');
+    });
+    //Item3
+    $(document).ready(function() {
+        $('.member-info:eq(2) span:nth-of-type(1)').text('Asociado a Astecna desde el año 2012.');
+        $('.member-info:eq(2) span:nth-of-type(2)').text('Es especialista en Sistemas de Información Geográfica (GIS), con mas de 4.000 casos confeccionados principalmente en Argentina, y también en Bolivia y Uruguay.');
+    });
+    //Associates
+    $("#team .section-title h3").eq(1).text("ASOCIADOS");
+    //Item1
+    $(document).ready(function() {
+        $('.member-info:eq(3) h4').text('Ing. Agr. Mario Lanari');
+        $('.member-info:eq(3) span').text('Especialista en NOA y cultivos intensivos.');
+    });
+    //Item2
+    $(document).ready(function() {
+        $('.member-info:eq(4) h4').text('Lic. Juan Ortiz Basualdo');
+        $('.member-info:eq(4) span').text('Administrador de empresas agropecuarias.');
+    });
+    //Item3
+    $(document).ready(function() {
+        $('.member-info:eq(5) h4').text('Ing. Agr. Rubén Oliverio');
+        $('.member-info:eq(5) span').text('Especialista en zona Núcleo.');
+    });
+    //Item4
+    $(document).ready(function() {
+        $('.member-info:eq(6) h4').text('Lic. en Edafología Rubén Walter');
+        $('.member-info:eq(6) span').text('Especialista en suelos.');
+    });
+    //Item5
+    $(document).ready(function() {
+        $('.member-info:eq(7) h4').text('Lic. en Administración Victoria Latour');
+        $('.member-info:eq(7) span').text('Responsable de gestión y planificación financiera de nuestras administraciones.');
+    });
+    //Item6
+    $(document).ready(function() {
+        $('.member-info:eq(8) h4').text('Ing. Agr. Guillermo Aponte Tinao');
+        $('.member-info:eq(8) span').text('Radicado en Santa Cruz de la Sierra, Bolivia. Inversiones y administraciones de campo.');
+    });
+    //Item7
+    $(document).ready(function() {
+        $('.member-info:eq(9) h4').text('Ing. Carlos Rizo');
+        $('.member-info:eq(9) span').text('Especialista en viñedos, cultivos intensivos e instalaciones industriales.');
+    });
+    //Item8
+    $(document).ready(function() {
+        $('.member-info:eq(10) h4').text('Abogado Guillermo Latour');
+        $('.member-info:eq(10) span').text('Derecho comercial y societario.');
+    });
+  
+    //Testimonials
+    $(document).ready(function() {
+        // Apuntar a cada span dentro de los elementos con la clase .testimonial-item
+        $('#testimonials .testimonial-item span').each(function(index) {
+          // Cambiar el texto de cada span individualmente
+          if (index === 0){
+          } else if (index === 8){
+            $(this).text('Por efecto de la fotosíntesis, el CO2 atmosférico es transformado en cadenas de hidratos de carbono, formando hojas, tallos, contenido celular (azúcares solubles, proteínas solubles y otros) y por las raíces...');
+          } else if (index === 9){
+            $(this).text('Ver más');
+          } else if (index === 10){
+            $(this).text('Hace años me contrataron para evaluar un campo en la Cuenca del Salado...');
+          } else if (index === 11){
+            $(this).text('Ver más');
+          } else if (index === 12){
+            $(this).text('Hay factores que identifican claramente países maduros y formados o inmaduros “en desarrollo”...');
+          } else if (index === 13){
+            $(this).text('Ver más');
+          } else if (index === 14){
+            $(this).text('La multiplicación de los gastos estructurales y la menor competitividad figuran entre los principales perjuicios; una mayor comunicación puede favorecer la gestión conjunta...');
+          } else if (index === 15){
+            $(this).text('Ver más');
+          }
+        });
+      });
+    //Contact
+    $("#contact .section-title p").text("Contacto");
+    $("#contact .address h4").text("Ubicación:");
+    $("#contact .phone h4").text("Teléfono:");
+    $(document).ready(function() {
+        $('#fullName').attr('placeholder', 'Nombre completo');
+        $('#email_id').attr('placeholder', 'Tu Email');
+        $('#message').attr('placeholder', 'Mensaje');
+        $('#service-option').text('Servicio');
+        });
+        
+        });
 });
+
