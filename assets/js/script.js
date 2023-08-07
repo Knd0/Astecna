@@ -304,6 +304,7 @@ $(function () {
         $('#email_id').attr('placeholder', 'Your Email');
         $('#message').attr('placeholder', 'Message');
         $('#service-option').text('Service');
+        $('.btn-send-msg').text('Send Message');
       });
 
 
@@ -611,6 +612,7 @@ $(function () {
         $('#email_id').attr('placeholder', 'Tu Email');
         $('#message').attr('placeholder', 'Mensaje');
         $('#service-option').text('Servicio');
+        $('.btn-send-msg').text('Mandar Mensaje');
         });
         
         });
